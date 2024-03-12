@@ -12,11 +12,12 @@ body {
     margin: 20px auto;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Создание тени */
     padding: 20px;
-    animation: slide-up 0.5s ease forwards;
+    animation: slide-up 0.5s ease forwards; /* Анимация с эффектом сглаживания */
 }
 
+/* Аниация смещение сверху вниз. Непрозрачности 0 и смещения вниз на 50px */
 @keyframes slide-up {
     from {
         opacity: 0;
@@ -45,7 +46,7 @@ input[type="text"] {
     border-bottom: 2px solid #ddd;
     font-size: 16px;
     border-radius: 4px 0 0 4px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s; /*  Добавляет главный переход при изменении цвета границы поля ввода */
 }
 
 input[type="text"]:focus {
@@ -59,8 +60,8 @@ button {
     color: #fff;
     border: none;
     border-radius: 0 4px 4px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    cursor: pointer; /* Задает указатель при наведении на кнопку. */
+    transition: background-color 0.3s; /* Добавляет плавный переход при изменении цвета фона кнопки. */
 }
 
 button:hover {
@@ -68,7 +69,7 @@ button:hover {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /* Убирает стандартные маркеры списка. */
     padding: 0;
 }
 
@@ -77,12 +78,14 @@ li {
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 4px;
+    /* Располагает элементы списка в строку и выравнивает их по вертикали и горизонтали. */
     display: flex;
     align-items: center;
     justify-content: space-between;
     animation: slide-left 0.3s ease forwards;
 }
 
+/* Анимаиця списка слева направо. */
 @keyframes slide-left {
     from {
         opacity: 0;
@@ -94,8 +97,9 @@ li {
     }
 }
 
+/* Стили для выполненных задач */
 .completed label {
-    text-decoration: line-through;
+    text-decoration: line-through; /* Добавляет перечеркивание к выполненным задачам. */
     color: #888;
 }
 
@@ -106,7 +110,7 @@ li {
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Добавляет плавный переход при изменении цвета фона кнопки удаления. */
 }
 
 .delete-btn:hover {
